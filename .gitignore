@@ -1,0 +1,17 @@
+# Dependencies
+node_modules/
+
+# Build outputs
+dist/
+
+# Log files
+npm-debug.log
+
+# Temporary cache files
+.cache/
+.npm/
+.webpack/
+
+# Editor configurations
+.vscode/
+.idea/
