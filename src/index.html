@@ -5,6 +5,83 @@
     <title><%= htmlWebpackPlugin.options.title %></title>
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <script defer="defer" src="bundle.js"></script>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Parisienne&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=WindSong:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
   </head>
-  <body></body>
+  <body>
+    <div>
+      <div>
+        <!-- LANDING PAGE -->
+        <div class="landing-page">
+          <!-- BANNER -->
+          <div class="landing-page-banner-img"></div>
+          <!-- TITLE -->
+          <h1 class="landing-page-title">Animal Gallery</h1>
+
+          <!-- SOCIAL MEDIA -->
+          <div class="landing-page-social-media">
+            <svg
+              class="landing-page-social-media-icon"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="currentColor"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"
+              />
+            </svg>
+
+            <svg
+              class="landing-page-social-media-icon"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="currentColor"
+              viewBox="0 0 14 14"
+            >
+              <g id="instagram">
+                <path
+                  id="Subtract"
+                  fill-rule="evenodd"
+                  d="M3.39027 0.786621C1.95225 0.786621 0.786499 1.95237 0.786499 3.3904v6.9434c0 1.438 1.165751 2.6038 2.603771 2.6038h6.94343c1.438 0 2.6037 -1.1658 2.6037 -2.6038V3.3904c0 -1.43803 -1.1657 -2.603779 -2.6037 -2.603779H3.39027ZM11.0832 3.39417c0 0.41421 -0.3358 0.75 -0.75 0.75 -0.41422 0 -0.75001 -0.33579 -0.75001 -0.75 0 -0.41422 0.33579 -0.75 0.75001 -0.75 0.4142 0 0.75 0.33578 0.75 0.75ZM6.8621 4.78198c-1.14878 0 -2.08006 0.93128 -2.08006 2.08006S5.71332 8.9421 6.8621 8.9421s2.08006 -0.93128 2.08006 -2.08006 -0.93128 -2.08006 -2.08006 -2.08006ZM3.78204 6.86204c0 -1.70107 1.37899 -3.08006 3.08006 -3.08006s3.08006 1.37899 3.08006 3.08006S8.56317 9.9421 6.8621 9.9421 3.78204 8.56311 3.78204 6.86204Z"
+                  clip-rule="evenodd"
+                  stroke-width="1"
+                ></path>
+              </g>
+            </svg>
+
+            <svg
+              class="landing-page-social-media-icon"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="currentColor"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.01 2.01 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.01 2.01 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31 31 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.01 2.01 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A100 100 0 0 1 7.858 2zM6.4 5.209v4.818l4.157-2.408z"
+              />
+            </svg>
+
+            <svg
+              class="landing-page-social-media-icon"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="currentColor"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334q.002-.211-.006-.422A6.7 6.7 0 0 0 16 3.542a6.7 6.7 0 0 1-1.889.518 3.3 3.3 0 0 0 1.447-1.817 6.5 6.5 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.32 9.32 0 0 1-6.767-3.429 3.29 3.29 0 0 0 1.018 4.382A3.3 3.3 0 0 1 .64 6.575v.045a3.29 3.29 0 0 0 2.632 3.218 3.2 3.2 0 0 1-.865.115 3 3 0 0 1-.614-.057 3.28 3.28 0 0 0 3.067 2.277A6.6 6.6 0 0 1 .78 13.58a6 6 0 0 1-.78-.045A9.34 9.34 0 0 0 5.026 15"
+              />
+            </svg>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
