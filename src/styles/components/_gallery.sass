@@ -1,0 +1,58 @@
+@use '../abstracts/variables' as var
+@use '../abstracts/mixins' as mix
+
+.gallery
+  max-width: var.$max-container-width
+  width: 100%
+  color: white
+
+  &-box
+    display: flex
+    flex-direction: column
+    gap: 30px
+
+  &-title
+    &.mammals
+      color: var.$mammal-color
+
+  &-card-box
+    display: flex
+    flex-wrap: wrap
+    gap: 50px
+
+  &-title
+    font-family: 'Josefin Sans'
+    font-size: 3.5rem
+    font-weight: 900
+
+  .card
+    &-animal
+      @include mix.size(100%, 400px)
+      @include mix.flex-center(column, 20)
+      border-radius: 10px
+      position: relative
+      overflow: hidden
+      max-width: 366px
+
+    &-flag
+      position: absolute
+      right: 14px
+      top: 14px
+      width: 46px
+      height: 34px
+      border-radius: 4px
+
+    &-title
+      font-family: 'Noto Sans'
+      font-size: 2rem
+      opacity: 1
+
+    &-button
+      padding: 5px 12px
+      font-size: 1rem
+      background-color: transparent
+      border: 1px var.$secondary-color solid
+      border-radius: 4px
+      color: var.$primary-color
+      cursor: pointer
+      font-family: 'Jura'

@@ -27,5 +27,24 @@
   gap: $gap + px
 
 @mixin size($width, $height)
-  width: $width + px
-  height: $height + px
+  width: $width
+  height: $height
+
+@mixin bg-img($img)
+  filter: grayscale(100%)
+  background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.98)), url('../assets/animals/#{$img}')
+  background-size: 165%
+  background-repeat: no-repeat
+  background-position: center
+  transition: background-size .7s ease-in-out, filter .7s ease-in-out
+
+  &:hover
+    background-image: linear-gradient(rgba(0,0,0,0.35), rgba(0,0,0,0.95)), url('../assets/animals/#{$img}')
+    background-size: 185%
+    filter: grayscale(0%)
+
+@mixin flag-img($flag)
+  background-image: url('../assets/flags/#{$flag}')
+  background-repeat: no-repeat
+  background-position: center
+  background-size: cover
