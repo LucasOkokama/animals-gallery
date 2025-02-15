@@ -2,6 +2,8 @@ const path = require('path')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const { BundleAnalyzerPlugin } = require('webpack-bundle-analyzer')
 
+const isDev = process.env.NODE_ENV === 'development';
+
 module.exports = {
   // Entry point for the application, where Webpack starts bundling
   entry: {
@@ -64,7 +66,7 @@ module.exports = {
       filename: 'index.html',
       template: 'src/index.html' // Path to the HTML template to be used
     }),
-    // Bundle Analyzer Plugin to visualize the size of the bundle
-    new BundleAnalyzerPlugin(),
+    // Bundle Analyzer Plugin to visualize the size of the bundle (dev only)
+    ...(isDev ? [new BundleAnalyzerPlugin()] : [])
   ]
 }
